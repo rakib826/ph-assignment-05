@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Flood Donation</title>
+  <title>Flood Donation | Blog</title>
   <script>
     tailwind.config = {
       theme: {
@@ -26,10 +26,42 @@
   </script>
 </head>
 <body class="font-lexend  ">
-  <nav>
-    <ul class="bg-yellow-50 py-4 px-4 lg:px-20">
-      <li><button class="bg-lime-400 font-bold py-2 px-5 rounded-lg"><a href="index.html">Home</a></button></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul class="bg-yellow-50 py-4 px-4 lg:px-24">
+        <li><button class="bg-lime-400 font-bold py-2 px-5 rounded-lg"><a href="index.html">Home</a></button></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="pt-10 pb-20 px-4 lg:px-24">
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">How does JavaScript access the DOM?</div>
+      <div class="collapse-content">
+        <p>JavaScript accesses the DOM using methods like getElementById, querySelector, and getElementsByClassName.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you modify text content in the DOM?</div>
+      <div class="collapse-content">
+        <p>Use element.textContent or element.innerHTML to change the text or HTML of an element.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is event delegation in the DOM?</div>
+      <div class="collapse-content">
+        <p>Event delegation allows events to be handled at a higher level, reducing the need for multiple event listeners.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How can you remove an element from the DOM?</div>
+      <div class="collapse-content">
+        <p>Use element.remove() or parentNode.removeChild(childNode) to remove an element.</p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
