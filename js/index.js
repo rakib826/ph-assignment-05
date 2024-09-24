@@ -20,8 +20,8 @@ noakhaliDonateButton.addEventListener("click", function(){
   const availableBalance = getTextValue("available-balance");
   const noakhaliCollection = getTextValue("noakhali-collection");
   const noakhaliInput = getInputValue("noakhali-input");
-  if(noakhaliInput <= 0 || isNaN(noakhaliInput)){
-    showError("invalid-amount-noakhali");
+  if(noakhaliInput <1 || isNaN(noakhaliInput)){
+    alert("Please enter a valid amount");
     return;
   }
   if(noakhaliInput > availableBalance){
@@ -49,7 +49,7 @@ noakhaliDonateButton.addEventListener("click", function(){
 // Error Message live
 document.getElementById('noakhali-input').addEventListener("input",function(){
   const noakhaliInput = getInputValue("noakhali-input");
-  if(noakhaliInput <= 0 || isNaN(noakhaliInput)){
+  if(noakhaliInput <1 || isNaN(noakhaliInput)){
     showError("invalid-amount-noakhali");
   }
   else{
@@ -63,8 +63,8 @@ feniDonateButton.addEventListener("click", function(){
   const availableBalance = getTextValue("available-balance");
   const feniCollection = getTextValue("feni-collection");
   const feniInput = getInputValue("feni-input");
-  if(feniInput <= 0 || isNaN(feniInput)){
-    showError("invalid-amount-feni");
+  if(feniInput <1 || isNaN(feniInput)){
+    alert("Please enter a valid amount");
     return;
   }
   if(feniInput > availableBalance){
@@ -92,7 +92,7 @@ feniDonateButton.addEventListener("click", function(){
 // Error Message live
 document.getElementById('feni-input').addEventListener("input",function(){
   const feniInput = getInputValue("feni-input");
-  if(feniInput <= 0 || isNaN(feniInput)){
+  if(feniInput <1 || isNaN(feniInput)){
     showError("invalid-amount-feni");
   }
   else{
@@ -106,8 +106,8 @@ quotaDonateButton.addEventListener("click", function(){
   const availableBalance = getTextValue("available-balance");
   const quotaCollection = getTextValue("quota-collection");
   const quotaInput = getInputValue("quota-input");
-  if(quotaInput <= 0 || isNaN(quotaInput)){
-    showError("invalid-amount-quota");
+  if(quotaInput <1 || isNaN(quotaInput)){
+    alert("Please enter a valid amount");
     return;
   }
   if(quotaInput > availableBalance){
@@ -135,7 +135,7 @@ quotaDonateButton.addEventListener("click", function(){
 // Error Message live
 document.getElementById('quota-input').addEventListener("input",function(){
   const quotaInput = getInputValue("quota-input");
-  if(quotaInput <= 0 || isNaN(quotaInput)){
+  if(quotaInput <1 || isNaN(quotaInput)){
     showError("invalid-amount-quota");
   }
   else{
