@@ -151,6 +151,7 @@ const donationTab = document.getElementById("donation-tab");
 historyTab.addEventListener("click",function(){
   historyTab.classList.add(
     "bg-lime-300",
+    "hover:bg-lime-500",
   );
   historyTab.classList.remove(
     "border"
@@ -160,9 +161,30 @@ historyTab.addEventListener("click",function(){
   );
   donationTab.classList.remove(
     "bg-lime-300",
+    "hover:bg-lime-500",
   );
 
   document.getElementById("donate-section").classList.add("hidden");
   document.getElementById("history-section").classList.remove("hidden");
 });
 
+// Donation tab
+donationTab.addEventListener("click",function(){
+  donationTab.classList.add(
+    "bg-lime-300",
+    "hover:bg-lime-500",
+  );
+  donationTab.classList.remove(
+    "border"
+  );
+  historyTab.classList.add(
+    "border"
+  );
+  historyTab.classList.remove(
+    "bg-lime-300",
+    "hover:bg-lime-500",
+  );
+
+  document.getElementById("history-section").classList.add("hidden");
+  document.getElementById("donate-section").classList.remove("hidden");
+});
