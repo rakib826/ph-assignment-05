@@ -40,7 +40,7 @@ noakhaliDonateButton.addEventListener("click", function(){
   historyItem.className = "bg-slate-100 shadow-md p-4 mb-2 rounded-lg";
   historyItem.innerHTML = `
     <p class="text-green-500 ">${noakhaliInput} Taka is donated for flood in Noakhali</p>  
-    <p class="text-gray-500">Date: ${new Date().toLocaleDateString()}</p>
+    <p class="text-gray-500">Date: ${new Date().toString()}</p>
   `;
 
   const historyList = document.getElementById('history-list');
@@ -83,7 +83,7 @@ feniDonateButton.addEventListener("click", function(){
   historyItem.className = "bg-slate-100 shadow-md p-4 mb-2 rounded-lg";
   historyItem.innerHTML = `
     <p class="text-green-500 ">${feniInput} Taka is donated for flood in Feni</p>  
-    <p class="text-gray-500">Date: ${new Date().toLocaleDateString()}</p>
+    <p class="text-gray-500">Date: ${new Date().toString()}</p>
   `;
 
   const historyList = document.getElementById('history-list');
@@ -126,7 +126,7 @@ quotaDonateButton.addEventListener("click", function(){
   historyItem.className = "bg-slate-100 shadow-md p-4 mb-2 rounded-lg";
   historyItem.innerHTML = `
     <p class="text-green-500 ">${quotaInput} Taka is donated for flood in Quota</p>
-    <p class="text-gray-500">Date: ${new Date().toLocaleDateString()}</p>
+    <p class="text-gray-500">Date: ${new Date().toString()}</p>
   `;  
 
   const historyList = document.getElementById('history-list');
